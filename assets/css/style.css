@@ -181,7 +181,10 @@ p {
 }
 
 .navbar-nav {
+  position: relative;
+  background-color: var(--white-color);
   gap: 30px;
+  z-index: 999;
 }
 
 /* home-section */
