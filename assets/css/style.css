@@ -89,7 +89,7 @@ h1 {
 
 h2 {
   font-weight: 700;
-  font-size: 2.25rem;
+  font-size: 2.75rem;
   text-transform: capitalize;
   font-family: var(--secondry-font);
   color: var(--secondry-color);
@@ -176,10 +176,17 @@ p {
 /* styling */
 
 .navbar {
+  position: fixed;
   width: 100%;
+  z-index: 999;
   height: 80px;
   box-shadow: 0px 0px 3px;
   background-color: var(--white-color) !important;
+}
+
+.navbar .container{
+  width: 100%;
+  background-color: var(--white-color);
 }
 
 .navbar-nav {
@@ -203,4 +210,30 @@ p {
 
 .carousel-caption p{
   color: var(--text-white);
+}
+
+.carousel-caption h1{
+  width: 80%;
+}
+
+.about-container .section-heading{
+  text-align: center;
+}
+
+.about-container .section-heading h2{
+  color: var(--neon-blue);
+}
+
+
+
+.about-container .about-points{
+  box-shadow: 0px 0px 3px solid #aaa;
+  padding: 10px ;
+
+}
+
+.icon{
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
 }
