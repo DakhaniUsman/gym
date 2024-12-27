@@ -39,9 +39,10 @@ ol {
   --white-color: #fff;
   --text-color: #555;
   --text-gray: #999;
+  --text-white: #fff;
   --black-color: #000;
   --neon-blue: #0074a7;
-  --neon-red:#f40136; 
+  --neon-red:#f40136;
   --primary-font: "Roboto", sans-serif;
   --secondry-font: "Quicksand", sans-serif;
 }
@@ -139,11 +140,12 @@ p {
 }
 
 .white-btn {
+  display: inline-block;
   padding: 0.625rem 1.875rem;
-  line-height: 25px;
-  background-color: var(--white-color);
+  line-height: 1.5625rem;
+  background-color: transparent;
   border: 0.1875rem solid var(--white-color);
-  color: var(--text-color);
+  color: var(--text-white);
   font-size: 0.9375rem;
   font-weight: 600;
   text-transform: capitalize;
@@ -153,6 +155,7 @@ p {
   -moz-transition: all 0.4s ease-out 0s;
   transition: all 0.4s ease-out 0s;
 }
+
 
 .main-btn:hover {
   background-color: transparent;
@@ -183,17 +186,16 @@ p {
 
 /* home-section */
 
-.home-section{
-    width: 70%;
-    min-height: 100vh;
-    position: absolute;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    transform: translateX(22%);
-    border: 2px solid black;
-    background: transparent;
+
+
+.carousel-caption{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
+.carousel-caption p{
+  color: var(--text-white);
+}
